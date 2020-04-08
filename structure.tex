@@ -1,7 +1,15 @@
 \documentclass[titlepage,a4paper,12pt]{article}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
-\usepackage{wrapfig}
+\usepackage{subfigure}
+\usepackage{hyperref}
+\usepackage{float}
+\hypersetup{
+            hypertex=true,
+            colorlinks=true,
+            linkcolor=blue,
+            anchorcolor=blue,
+            citecolor=blue}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[R]{\bfseries{}Yang \thepage}
@@ -13,23 +21,23 @@
     \maketitle
     \tableofcontents
     \listoffigures
-    \include{abstract}
-
-    \section{Introduction}
-    \include{introduction}
     
-    \section{Argument for the Affirmative}
-
-    %I love the world.
-
+    \textbf{Abstract}: Engineering schools are among the most popular colleges. Some of them like UM-SJTU JI are fond of interdisciplinarity. But should interdisciplinary just be applied within the realm of 
+engineering? Many engineering students like music, should they be given the right to have professional 
+music training opportunities in their own college? This paper is produced for the necessity of offering 
+music courses in engineering school. Articles from reliable databases and some survey results done by the 
+author are the main evidences. The main focuses are costs, music therapy and so on. The conclusion is
+that engineering schools should encourage students to take music courses by actually offering them, but
+they cannot be so strict with the GPA concerning to musical courses.
+    \input{introduction.tex}
+    \input{AFTA.tex}
+    \input{AFTO.tex}
+    \input{MyPosition.tex}
+    \input{Conclusion.tex}
     
-    \include{AFTA}
-    \section{Argument for the Opposition}
-    \include{AFTO}
-    \section{My Position}
-    \include{My Position}
-    \section{Conclusion}
-    \include{Conclusion}
+
+
+
     \begin{appendix}
         Here is all the reference.
     \end{appendix}
