@@ -1,23 +1,36 @@
-\documentclass[titlepage,a4paper]{report}
+\documentclass[titlepage,a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\bfseries{}Yang \thepage}
 \begin{document}
-    \title{Should music be encouraged as electives for engineering student?}
+    %\textrm{Roman Family}
+    \title{Should music be encouraged as electives for engineering students?}
     \author{Zeyu Yang}
     \date{\today}
     \maketitle
     \tableofcontents
-    \chapter{Abstract}
-    \include{abstract.tex}
-    \chapter{Introduction}
-    \include{introduction.tex}
-    \chapter{Argument for the Affirmative}
-    \include{AFTA.tex}
-    \chapter{Argument for the Opposition}
-    \include{AFTO.tex}
-    \chapter{My Position}
-    \include{My Position.tex}
-    \chapter{Conclusion}
-    \include{Conclusion.tex}
+    \listoffigures
+    \include{abstract}
+
+    \section{Introduction}
+    \include{introduction}
+    
+    \section{Argument for the Affirmative}
+
+    %I love the world.
+
+    
+    \include{AFTA}
+    \section{Argument for the Opposition}
+    \include{AFTO}
+    \section{My Position}
+    \include{My Position}
+    \section{Conclusion}
+    \include{Conclusion}
     \begin{appendix}
-        
+        Here is all the reference.
     \end{appendix}
 \end{document}
